@@ -18,7 +18,7 @@ Tested on Windows 11 with the Steam version. It hasn't been tested on Linux or S
 
 - It doesn't touch `BlackOps3.exe` or any game file. Windows loads `winmm.dll` from the game folder before the system copy (it isn't on Windows' KnownDLLs list), the same way ReShade and similar mods load.
 - Every call is passed straight to the real `C:\Windows\System32\winmm.dll`, except one: when the game asks how many sound mixers exist, the answer is capped at 32.
-- Works alongside [T7Patch](https://github.com/Scroptss/T7Patch) 3.09 (the manual install, which loads as `dsound.dll`): tested together on 2026-11-21. ReShade loads as `dxgi.dll`, so it shouldn't clash either.
+- Works alongside [T7Patch](https://github.com/Scroptss/T7Patch) 3.09 (the manual install, which loads as `dsound.dll`): tested together on 2026-11-21. ReShade 6.8.0 (as `dxgi.dll`) works alongside both, tested the same day.
 - Anti-cheat: nobody has checked how Black Ops III's anti-cheat treats an extra DLL. It's only been tested offline (menus, Zombies). Use it online at your own risk.
 
 ## What's going on
